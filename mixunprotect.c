@@ -53,7 +53,8 @@ int main(int argc, char** argv)
 			fseek(mix, 0, SEEK_SET);
 			fwrite(&header, sizeof(header), 1, mix);
 		}
-
+		printf("Done De-Scramble the Mix");
+		
 		fclose(mix);
 	}
 
